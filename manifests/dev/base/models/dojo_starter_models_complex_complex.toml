@@ -1,0 +1,20 @@
+kind = "DojoModel"
+class_hash = "0x646274448ef1468e4266a33b88ad439f906880334bef74ca4b3971243eb575d"
+original_class_hash = "0x646274448ef1468e4266a33b88ad439f906880334bef74ca4b3971243eb575d"
+abi = "manifests/dev/abis/base/models/dojo_starter_models_complex_complex.json"
+name = "dojo_starter::models::complex::complex"
+
+[[members]]
+name = "player"
+type = "ContractAddress"
+key = true
+
+[[members]]
+name = "direction"
+type = "Direction"
+key = false
+
+[[members]]
+name = "vec"
+type = "Vec3"
+key = false

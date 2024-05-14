@@ -169,56 +169,30 @@
   },
   {
     "type": "impl",
-    "name": "movesImpl",
-    "interface_name": "dojo_starter::models::moves::Imoves"
-  },
-  {
-    "type": "enum",
-    "name": "dojo_starter::models::moves::Direction",
-    "variants": [
-      {
-        "name": "None",
-        "type": "()"
-      },
-      {
-        "name": "Left",
-        "type": "()"
-      },
-      {
-        "name": "Right",
-        "type": "()"
-      },
-      {
-        "name": "Up",
-        "type": "()"
-      },
-      {
-        "name": "Down",
-        "type": "()"
-      }
-    ]
+    "name": "simpleImpl",
+    "interface_name": "dojo_starter::models::simple::Isimple"
   },
   {
     "type": "struct",
-    "name": "dojo_starter::models::moves::Moves",
+    "name": "dojo_starter::models::simple::Simple",
     "members": [
       {
         "name": "player",
         "type": "core::starknet::contract_address::ContractAddress"
       },
       {
-        "name": "remaining",
-        "type": "core::integer::u8"
+        "name": "f1",
+        "type": "core::felt252"
       },
       {
-        "name": "last_direction",
-        "type": "dojo_starter::models::moves::Direction"
+        "name": "f2",
+        "type": "core::felt252"
       }
     ]
   },
   {
     "type": "interface",
-    "name": "dojo_starter::models::moves::Imoves",
+    "name": "dojo_starter::models::simple::Isimple",
     "items": [
       {
         "type": "function",
@@ -226,7 +200,7 @@
         "inputs": [
           {
             "name": "model",
-            "type": "dojo_starter::models::moves::Moves"
+            "type": "dojo_starter::models::simple::Simple"
           }
         ],
         "outputs": [],
@@ -236,7 +210,7 @@
   },
   {
     "type": "event",
-    "name": "dojo_starter::models::moves::moves::Event",
+    "name": "dojo_starter::models::simple::simple::Event",
     "kind": "enum",
     "variants": []
   }

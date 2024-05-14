@@ -1,0 +1,9 @@
+kind = "DojoContract"
+class_hash = "0x74415149b9b08bdfc9916a173555bc81d76a962c1cf53fd88c1baecf2f416dd"
+original_class_hash = "0x74415149b9b08bdfc9916a173555bc81d76a962c1cf53fd88c1baecf2f416dd"
+base_class_hash = "0x0"
+abi = "manifests/dev/abis/base/contracts/dojo_starter_systems_classic_complex_loop_classic_complex_loop.json"
+reads = []
+writes = []
+computed = []
+name = "dojo_starter::systems::classic_complex_loop::classic_complex_loop"

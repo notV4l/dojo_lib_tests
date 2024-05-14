@@ -1,0 +1,20 @@
+kind = "DojoModel"
+class_hash = "0x38a5263f1ec9d962cdae09cc57c7b1c7fc9ae88b76bc30b89821196455a2332"
+original_class_hash = "0x38a5263f1ec9d962cdae09cc57c7b1c7fc9ae88b76bc30b89821196455a2332"
+abi = "manifests/dev/abis/base/models/dojo_starter_models_simple_simple.json"
+name = "dojo_starter::models::simple::simple"
+
+[[members]]
+name = "player"
+type = "ContractAddress"
+key = true
+
+[[members]]
+name = "f1"
+type = "felt252"
+key = false
+
+[[members]]
+name = "f2"
+type = "felt252"
+key = false

@@ -1,0 +1,60 @@
+kind = "DojoModel"
+class_hash = "0x706fca564627d6e60e653efbd71aaed1bbaaef43c32919def049c93ff0077d9"
+original_class_hash = "0x706fca564627d6e60e653efbd71aaed1bbaaef43c32919def049c93ff0077d9"
+abi = "manifests/dev/abis/base/models/dojo_starter_models_complex_complex_fat.json"
+name = "dojo_starter::models::complex::complex_fat"
+
+[[members]]
+name = "player"
+type = "ContractAddress"
+key = true
+
+[[members]]
+name = "direction1"
+type = "Direction"
+key = false
+
+[[members]]
+name = "vec1"
+type = "Vec3"
+key = false
+
+[[members]]
+name = "direction2"
+type = "Direction"
+key = false
+
+[[members]]
+name = "vec2"
+type = "Vec4"
+key = false
+
+[[members]]
+name = "direction3"
+type = "Direction2"
+key = false
+
+[[members]]
+name = "vec3"
+type = "Vec5"
+key = false
+
+[[members]]
+name = "direction4"
+type = "Direction3"
+key = false
+
+[[members]]
+name = "fat1"
+type = "FatStruct"
+key = false
+
+[[members]]
+name = "fat2"
+type = "FatStruct"
+key = false
+
+[[members]]
+name = "fat3"
+type = "FatStruct"
+key = false

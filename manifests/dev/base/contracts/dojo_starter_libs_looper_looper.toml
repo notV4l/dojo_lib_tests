@@ -1,0 +1,9 @@
+kind = "DojoContract"
+class_hash = "0x2efb11d6b8b44c11ec61d0755ed4172d3fd41e9199101a28c9b4da334835815"
+original_class_hash = "0x2efb11d6b8b44c11ec61d0755ed4172d3fd41e9199101a28c9b4da334835815"
+base_class_hash = "0x0"
+abi = "manifests/dev/abis/base/contracts/dojo_starter_libs_looper_looper.json"
+reads = []
+writes = []
+computed = []
+name = "dojo_starter::libs::looper::looper"

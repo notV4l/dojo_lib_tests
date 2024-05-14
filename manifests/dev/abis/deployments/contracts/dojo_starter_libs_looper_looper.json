@@ -1,0 +1,504 @@
+[
+  {
+    "type": "impl",
+    "name": "DojoResourceProviderImpl",
+    "interface_name": "dojo::world::IDojoResourceProvider"
+  },
+  {
+    "type": "interface",
+    "name": "dojo::world::IDojoResourceProvider",
+    "items": [
+      {
+        "type": "function",
+        "name": "dojo_resource",
+        "inputs": [],
+        "outputs": [
+          {
+            "type": "core::felt252"
+          }
+        ],
+        "state_mutability": "view"
+      }
+    ]
+  },
+  {
+    "type": "impl",
+    "name": "WorldProviderImpl",
+    "interface_name": "dojo::world::IWorldProvider"
+  },
+  {
+    "type": "struct",
+    "name": "dojo::world::IWorldDispatcher",
+    "members": [
+      {
+        "name": "contract_address",
+        "type": "core::starknet::contract_address::ContractAddress"
+      }
+    ]
+  },
+  {
+    "type": "interface",
+    "name": "dojo::world::IWorldProvider",
+    "items": [
+      {
+        "type": "function",
+        "name": "world",
+        "inputs": [],
+        "outputs": [
+          {
+            "type": "dojo::world::IWorldDispatcher"
+          }
+        ],
+        "state_mutability": "view"
+      }
+    ]
+  },
+  {
+    "type": "impl",
+    "name": "LooperImpl",
+    "interface_name": "dojo_starter::libs::looper::ILooper"
+  },
+  {
+    "type": "struct",
+    "name": "dojo_starter::models::simple::SimpleFat",
+    "members": [
+      {
+        "name": "player",
+        "type": "core::starknet::contract_address::ContractAddress"
+      },
+      {
+        "name": "f1",
+        "type": "core::felt252"
+      },
+      {
+        "name": "f2",
+        "type": "core::felt252"
+      },
+      {
+        "name": "f3",
+        "type": "core::felt252"
+      },
+      {
+        "name": "f4",
+        "type": "core::felt252"
+      },
+      {
+        "name": "f5",
+        "type": "core::felt252"
+      },
+      {
+        "name": "f6",
+        "type": "core::felt252"
+      },
+      {
+        "name": "f7",
+        "type": "core::felt252"
+      },
+      {
+        "name": "f8",
+        "type": "core::felt252"
+      },
+      {
+        "name": "f9",
+        "type": "core::felt252"
+      }
+    ]
+  },
+  {
+    "type": "struct",
+    "name": "core::array::Span::<dojo_starter::models::simple::SimpleFat>",
+    "members": [
+      {
+        "name": "snapshot",
+        "type": "@core::array::Array::<dojo_starter::models::simple::SimpleFat>"
+      }
+    ]
+  },
+  {
+    "type": "enum",
+    "name": "dojo_starter::models::complex::Direction",
+    "variants": [
+      {
+        "name": "None",
+        "type": "()"
+      },
+      {
+        "name": "Left",
+        "type": "()"
+      },
+      {
+        "name": "Right",
+        "type": "()"
+      },
+      {
+        "name": "Up",
+        "type": "()"
+      },
+      {
+        "name": "Down",
+        "type": "()"
+      }
+    ]
+  },
+  {
+    "type": "struct",
+    "name": "core::integer::u256",
+    "members": [
+      {
+        "name": "low",
+        "type": "core::integer::u128"
+      },
+      {
+        "name": "high",
+        "type": "core::integer::u128"
+      }
+    ]
+  },
+  {
+    "type": "struct",
+    "name": "dojo_starter::models::complex::Vec3",
+    "members": [
+      {
+        "name": "x",
+        "type": "core::integer::u256"
+      },
+      {
+        "name": "y",
+        "type": "core::integer::u256"
+      },
+      {
+        "name": "z",
+        "type": "core::integer::u256"
+      }
+    ]
+  },
+  {
+    "type": "struct",
+    "name": "dojo_starter::models::complex::Vec4",
+    "members": [
+      {
+        "name": "x",
+        "type": "core::integer::u256"
+      },
+      {
+        "name": "y",
+        "type": "core::integer::u256"
+      },
+      {
+        "name": "z",
+        "type": "core::integer::u256"
+      },
+      {
+        "name": "t",
+        "type": "core::felt252"
+      }
+    ]
+  },
+  {
+    "type": "enum",
+    "name": "dojo_starter::models::complex::Direction2",
+    "variants": [
+      {
+        "name": "None",
+        "type": "()"
+      },
+      {
+        "name": "Left",
+        "type": "()"
+      },
+      {
+        "name": "Right",
+        "type": "()"
+      },
+      {
+        "name": "Up",
+        "type": "()"
+      },
+      {
+        "name": "Down",
+        "type": "()"
+      }
+    ]
+  },
+  {
+    "type": "struct",
+    "name": "dojo_starter::models::complex::Vec5",
+    "members": [
+      {
+        "name": "x",
+        "type": "core::integer::u256"
+      },
+      {
+        "name": "y",
+        "type": "core::integer::u256"
+      },
+      {
+        "name": "z",
+        "type": "core::integer::u256"
+      },
+      {
+        "name": "t",
+        "type": "core::felt252"
+      },
+      {
+        "name": "u",
+        "type": "core::felt252"
+      }
+    ]
+  },
+  {
+    "type": "enum",
+    "name": "dojo_starter::models::complex::Direction3",
+    "variants": [
+      {
+        "name": "None",
+        "type": "()"
+      },
+      {
+        "name": "Left",
+        "type": "()"
+      },
+      {
+        "name": "Right",
+        "type": "()"
+      },
+      {
+        "name": "Up",
+        "type": "()"
+      },
+      {
+        "name": "Down",
+        "type": "()"
+      },
+      {
+        "name": "AAA",
+        "type": "()"
+      },
+      {
+        "name": "BBB",
+        "type": "()"
+      },
+      {
+        "name": "CCC",
+        "type": "()"
+      },
+      {
+        "name": "DDD",
+        "type": "()"
+      },
+      {
+        "name": "EEE",
+        "type": "()"
+      }
+    ]
+  },
+  {
+    "type": "struct",
+    "name": "dojo_starter::models::complex::FatStruct",
+    "members": [
+      {
+        "name": "x",
+        "type": "core::integer::u256"
+      },
+      {
+        "name": "y",
+        "type": "core::integer::u256"
+      },
+      {
+        "name": "z",
+        "type": "core::integer::u128"
+      },
+      {
+        "name": "t",
+        "type": "core::integer::u256"
+      },
+      {
+        "name": "u",
+        "type": "core::integer::u256"
+      },
+      {
+        "name": "v",
+        "type": "core::integer::u128"
+      },
+      {
+        "name": "a",
+        "type": "core::integer::u256"
+      },
+      {
+        "name": "b",
+        "type": "core::integer::u256"
+      },
+      {
+        "name": "c",
+        "type": "core::integer::u256"
+      },
+      {
+        "name": "d",
+        "type": "core::integer::u256"
+      },
+      {
+        "name": "vec1",
+        "type": "dojo_starter::models::complex::Vec5"
+      },
+      {
+        "name": "vec2",
+        "type": "dojo_starter::models::complex::Vec5"
+      },
+      {
+        "name": "vec3",
+        "type": "dojo_starter::models::complex::Vec5"
+      },
+      {
+        "name": "vec4",
+        "type": "dojo_starter::models::complex::Vec5"
+      }
+    ]
+  },
+  {
+    "type": "struct",
+    "name": "dojo_starter::models::complex::ComplexFat",
+    "members": [
+      {
+        "name": "player",
+        "type": "core::starknet::contract_address::ContractAddress"
+      },
+      {
+        "name": "direction1",
+        "type": "dojo_starter::models::complex::Direction"
+      },
+      {
+        "name": "vec1",
+        "type": "dojo_starter::models::complex::Vec3"
+      },
+      {
+        "name": "direction2",
+        "type": "dojo_starter::models::complex::Direction"
+      },
+      {
+        "name": "vec2",
+        "type": "dojo_starter::models::complex::Vec4"
+      },
+      {
+        "name": "direction3",
+        "type": "dojo_starter::models::complex::Direction2"
+      },
+      {
+        "name": "vec3",
+        "type": "dojo_starter::models::complex::Vec5"
+      },
+      {
+        "name": "direction4",
+        "type": "dojo_starter::models::complex::Direction3"
+      },
+      {
+        "name": "fat1",
+        "type": "dojo_starter::models::complex::FatStruct"
+      },
+      {
+        "name": "fat2",
+        "type": "dojo_starter::models::complex::FatStruct"
+      },
+      {
+        "name": "fat3",
+        "type": "dojo_starter::models::complex::FatStruct"
+      }
+    ]
+  },
+  {
+    "type": "struct",
+    "name": "core::array::Span::<dojo_starter::models::complex::ComplexFat>",
+    "members": [
+      {
+        "name": "snapshot",
+        "type": "@core::array::Array::<dojo_starter::models::complex::ComplexFat>"
+      }
+    ]
+  },
+  {
+    "type": "interface",
+    "name": "dojo_starter::libs::looper::ILooper",
+    "items": [
+      {
+        "type": "function",
+        "name": "get_simple",
+        "inputs": [],
+        "outputs": [
+          {
+            "type": "core::array::Span::<dojo_starter::models::simple::SimpleFat>"
+          }
+        ],
+        "state_mutability": "view"
+      },
+      {
+        "type": "function",
+        "name": "get_complex",
+        "inputs": [],
+        "outputs": [
+          {
+            "type": "core::array::Span::<dojo_starter::models::complex::ComplexFat>"
+          }
+        ],
+        "state_mutability": "view"
+      }
+    ]
+  },
+  {
+    "type": "impl",
+    "name": "UpgradableImpl",
+    "interface_name": "dojo::components::upgradeable::IUpgradeable"
+  },
+  {
+    "type": "interface",
+    "name": "dojo::components::upgradeable::IUpgradeable",
+    "items": [
+      {
+        "type": "function",
+        "name": "upgrade",
+        "inputs": [
+          {
+            "name": "new_class_hash",
+            "type": "core::starknet::class_hash::ClassHash"
+          }
+        ],
+        "outputs": [],
+        "state_mutability": "external"
+      }
+    ]
+  },
+  {
+    "type": "event",
+    "name": "dojo::components::upgradeable::upgradeable::Upgraded",
+    "kind": "struct",
+    "members": [
+      {
+        "name": "class_hash",
+        "type": "core::starknet::class_hash::ClassHash",
+        "kind": "data"
+      }
+    ]
+  },
+  {
+    "type": "event",
+    "name": "dojo::components::upgradeable::upgradeable::Event",
+    "kind": "enum",
+    "variants": [
+      {
+        "name": "Upgraded",
+        "type": "dojo::components::upgradeable::upgradeable::Upgraded",
+        "kind": "nested"
+      }
+    ]
+  },
+  {
+    "type": "event",
+    "name": "dojo_starter::libs::looper::looper::Event",
+    "kind": "enum",
+    "variants": [
+      {
+        "name": "UpgradeableEvent",
+        "type": "dojo::components::upgradeable::upgradeable::Event",
+        "kind": "nested"
+      }
+    ]
+  }
+]
